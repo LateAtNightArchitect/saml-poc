@@ -1,0 +1,11 @@
+# Keycloak POC (Grafana with OIDC)
+
+services:
+ 
+  grafana:
+    container_name: grafana
+    image: grafana/grafana-oss:11.1.3
+    ports:
+     - "3000:3000"
+    volumes:
+     - ./grafana:/etc/grafana

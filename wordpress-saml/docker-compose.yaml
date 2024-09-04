@@ -1,0 +1,9 @@
+# Keycloak POC (Grafana with OIDC)
+
+services:
+ 
+  wordpress:
+    container_name: wordpress
+    image: wordpress:php8.3
+    ports:
+     - "8000:80"
